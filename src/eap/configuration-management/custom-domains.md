@@ -29,7 +29,13 @@ Apps are always accessible to end-users through built-in domains. For example, a
 
 In addition, ODC lets you make your apps accessible to end-users through your organization's domain(s). In a given stage, your apps can be available through one or more custom domains that you add to that stage. Each custom domain must be unique to a customer and stage.
 
-When you add a custom domain to a stage, all apps deployed to that stage are accessible through the domain. The following table shows a possible setup for a customer who has three stages and wants one custom subdomain for each stage:
+When you add a custom domain to a stage, all apps deployed to that stage are accessible through the custom domain.  For example, an app named MyApp deployed to the Development stage would be accessible from both the built-in domain, as mentioned above, as well as the custom domain at `<CustomDomain>/MyApp`.  
+
+<div class="info" markdown="1">
+Even after configuring a custom domain, accessing applications via a URL always requires the end user to specify the full path to the application, including the application name.
+</div>
+
+The following table shows a possible setup for a customer who has three stages and wants one custom subdomain for each stage:
 
 | Stage       | Custom domain    |
 | ----------- | ---------------- |
